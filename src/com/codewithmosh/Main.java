@@ -1,13 +1,12 @@
 package com.codewithmosh;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
-        String message = "Hello \"World\"" + " !!!";
-        System.out.println(message);
-        System.out.println(message.replace("!", "*"));
-        System.out.println(message);
-
-        String message2 = "c:\\Windows\\...";
-        System.out.println(message2);
+        int[] numbers = { 2, 3, 5, 1, 4 };
+        Arrays.sort(numbers);
+        System.out.println(numbers);  // prints the memory address where the array is stored
+        System.out.println(Arrays.toString(numbers));  // prints the value of the array
     }
 }
