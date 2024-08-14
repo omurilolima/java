@@ -4,11 +4,16 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int result1 = 10 / 3;
-        double result2 = (double)10 / (double)3;  // In java, a division of two integers is an integer. So we need to use double for precision
-        System.out.println(result1);
-        System.out.println(result2);
+        // Implicit casting
+        // byte > short > int > long
+        short x = 1;
+        int y = x + 2;
+        System.out.println(y);
 
+        // Explicit casting
+        String a = "1";
+        int b = Integer.parseInt(a) + 2;  // convert string to int
+        System.out.println(b);
 
     }
 }
